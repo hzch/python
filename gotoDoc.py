@@ -7,7 +7,7 @@ import argparse
 from biplist import *
 
 DEFAULTTYPE = "app"
-DEFAULTOS = "iOS-10-0"
+DEFAULTOS = "iOS-10-2"
 DEFAULTDEVICE = "iPhone-7"
 DEFAULTBUNDLEIDAPP = "BUNDLEID"
 DEFAULTBUNDLEIDEXTENSION = "BUNDLEID"
@@ -21,7 +21,7 @@ PLISTFILENAME = ".com.apple.mobile_container_manager.metadata.plist"
 def getDevices(allOSVersions, osVersion):
 	devices = allOSVersions.get(PREOSVERSION + osVersion)
 	if devices == None:
-		print 'verison error! All os verisons:'
+		print 'version error! All os version:'
 		for osVersion in allOSVersions.keys():
 			if len(osVersion) < len(PREOSVERSION):
 				continue
